@@ -19,11 +19,7 @@ public class Exercise6 {
         for (int i = start; i != end;) {
             i = calculateIndex(i, increment);
             printSpaces(biggest, i);
-            if (i != biggest) {
-                printAsterisks(i);
-            } else {
-                System.out.println("Carlos");
-            }
+            printAsterisks(i);
         }
     }
 
