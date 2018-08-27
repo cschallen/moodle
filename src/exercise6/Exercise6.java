@@ -2,7 +2,7 @@ package exercise6;
 
 public class Exercise6 {
     public static void main(String[] args) {
-      drawDiamond(10);
+      drawDiamond(3);
     }
 
     private static void drawDiamond(int number) {
@@ -19,7 +19,11 @@ public class Exercise6 {
         for (int i = start; i != end;) {
             i = calculateIndex(i, increment);
             printSpaces(biggest, i);
-            printAsterisks(i);
+            if (i != biggest) {
+                printAsterisks(i);
+            } else {
+                System.out.println("Carlos");
+            }
         }
     }
 
